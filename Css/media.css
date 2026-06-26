@@ -1,0 +1,125 @@
+@media (max-width: 991px) {
+  .dropdown-menu[data-bs-popper] {
+    top: 60px;
+    left: 20px;
+    right: 40px;
+    border: none;
+    box-shadow: var(--main-shadow);
+    border-radius: 20px;
+    box-shadow: none;
+  }
+  #nav {
+    border-bottom: none;
+  }
+  .nav-link.active::before {
+    display: none;
+  }
+  .nav-link.active {
+    color: #364153 !important;
+  }
+  .nav-link.active:hover {
+    color: #e6550c !important;
+  }
+  .navbar-nav {
+    gap: 20px;
+    text-align: start;
+    scrollbar-width: none;
+  }
+  .dropdown-menu[data-bs-popper] {
+    min-height: 400PX;
+    overflow-y: scroll;
+  }
+  .sign-in-btn
+  {
+border: 1px solid #e5e7eb;
+color: #364153;
+ 
+  }
+
+  #nav .container { 
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-logo,
+  #navbarScroll,
+  .sign-in {
+    width: 100%;
+  }
+  .sign-in {
+    display: flex;
+    flex-direction: column;
+  }
+  .sign-in > * {
+    width: 100%;
+   }
+
+  .logo-and-tog {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(10, 10, 10, 0.1);
+    padding-bottom: 15px;
+  }
+  .nav-logo {
+    width: fit-content;
+  }
+ 
+.dropdown-menu  
+{
+    max-height: 400px;
+    overflow-y: scroll;
+} 
+.ddm.drop-last-parent
+{
+    flex-direction: row;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 20px;
+    width: 100%;
+    background-color: rgb(224, 241, 231);
+}
+}
+@media (max-width: 768px)
+{
+.dropdown-menu .row
+{
+    gap: 40px;
+}
+ 
+} 
+@media (max-width: 991px)
+{
+    #cards .inner {
+  height: 100%;
+}
+}
+@media (min-width: 991px) and (max-width:1399px)
+{
+    #cards .inner {
+  height: 100%;
+}
+}
+@media (max-width: 767px)
+{
+    .footer-box 
+    {
+        flex-direction: column;
+        justify-content: flex-start;
+         align-items: flex-start;
+        gap: 20px;
+    }
+    .social 
+    {
+        display: flex;
+        width: 100%;
+     justify-content: flex-start !important;
+     align-items: center;
+    }
+    
+    .footer-content 
+    {
+        width: 100%;
+    }
+}

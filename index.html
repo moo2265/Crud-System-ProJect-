@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="transforming businesses through innovative digital solutions and cutting-edge technology.">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <title>CRUD-Design (Mohamed-Ali)</title>
+    <!-- Google Font Sheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./Css/all.min.css">
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="./Css/bootstrap.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="./Css/style.css">
+    <!-- Media Style Sheet -->
+    <link rel="stylesheet" href="./Css/media.css">
+</head>
+
+
+<body>
+
+    <div class="bg-shape shape1"></div>
+    <div class="bg-shape shape2"></div>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold" href="#">
+                CRUD System
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Products</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="crud-system py-5">
+
+        <div class="container">
+
+            <div class="title text-center mb-5">
+                <h1>CRUD SYSTEM</h1>
+                <p>Create • Read • Update • Delete</p>
+            </div>
+
+            <div class="crud-card p-4">
+
+                <div class="row g-4">
+
+                    <div class="col-md-6">
+                        <input type="text" class="form-control custom-input" placeholder="Product Name"
+                            id="productNameInput">
+                    </div>
+
+                    <div class="col-md-6">
+                        <input type="number" class="form-control custom-input" placeholder="Product Price"
+                            id="productPriceInput">
+                    </div>
+
+                    <div class="col-md-6">
+                        <input type="text" class="form-control custom-input" placeholder="Product Category"
+                            id="productCategoryInput">
+                    </div>
+
+                    <div class="col-md-6">
+                        <input type="file" class="form-control custom-input" id="productImgInput">
+                    </div>
+
+                    <div class="col-12">
+                        <textarea class="form-control custom-input" rows="4" placeholder="Product Description"
+                            id="productDescInput"></textarea>
+                    </div>
+
+                    <div class="col-12 text-center">
+                        <button class="btn custom-btn px-5" id="addBtn">
+                            Add Product
+                        </button>
+                        <button class="btn bg-warning custom-btn px-5 d-none" id="updateBtn">
+                            Update Product
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="search-box mt-5">
+                <input type="text" class="form-control search-input" placeholder="Search Product ..." id="searchInput">
+            </div>
+
+            <div class="table-responsive mt-4">
+
+                <table class="table custom-table align-middle text-center">
+
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Category</th>
+                            <th>Description</th>
+                            <th>Update</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tbody">
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+<h5>Test Github</h5>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/animation.js"></script>
+</body>
+
+</html>
